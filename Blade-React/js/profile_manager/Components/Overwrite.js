@@ -9,9 +9,12 @@ import Box                            from "@material-ui/core/Box";
 import DeleteIcon                     from "@material-ui/icons/Delete";
 
 export const Overwrite = ({profileId, value, identifier, setValue, overwriteEndpoint, title, inputType, inputProps, inputLabelProps}) => {
+    // State to manage loading state during API requests
     const [loading, setLoading]   = useState(false);
+    // State to manage the input value for overwriting
     const [valueInput, setValueInput] = useState(value ?? '');
     
+     // Function to handle overwriting values
     const updateValue = (value) => {
         setLoading(true);
         
@@ -34,6 +37,7 @@ export const Overwrite = ({profileId, value, identifier, setValue, overwriteEndp
         return function cleanup() {cancelSource.cancel();};
     }
     
+     // Function to remove overwrites
     const removeOverwrite = () => {
         setLoading(true);
         

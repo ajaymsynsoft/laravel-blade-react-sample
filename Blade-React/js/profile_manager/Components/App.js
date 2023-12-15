@@ -10,8 +10,7 @@ const App = ({profileId}) => {
     const [ltv, setLtv]                     = useState(null);  
     
     useEffect(() => {
-        setLoading(true);
-        
+        setLoading(true);        
         let cancelSource = cancelTokenSource();
         ApiClient.get('profile/get-overwritten-params', {
             params     : {userId: profileId},
