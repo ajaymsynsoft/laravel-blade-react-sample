@@ -1,13 +1,13 @@
 # Sample file for Controller, Blade and Blade with React.
 
-## Blade
+## Blade folder
 
-Blade folder contains how we are showing the product with help of blade file.
+Blade for Product display.
 
-## Blade with React
+## Blade-React folder
 
-Blade with React folder contains the blade file and React component.
+Blade file and React component to update customer profile field.
 
-## Controller
+## Controller folder
 
-Blade folder contains how we are showing the product with help of blade file.
+Controller to display and sync the product.
